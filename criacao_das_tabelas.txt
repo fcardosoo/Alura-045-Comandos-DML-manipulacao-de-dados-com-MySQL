@@ -29,3 +29,22 @@ ferias bit(1),
 primary key (matricula)
 );
 
+# criando a tabela clientes
+CREATE TABLE `vendas_sucos`.`clientes` (
+  `CPF` VARCHAR(11) NOT NULL,
+  `nome` VARCHAR(100) NULL,
+  `endereco` VARCHAR(150) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `cidade` VARCHAR(50) NULL,
+  `CEP` VARCHAR(8) NULL,
+  `data_nascimento` date NULL,
+  `idade` INT NULL,
+  `sexo` VARCHAR(1) NULL,
+  `limite_credito` float NULL,
+  `volume_credito` float NULL,
+  `primeira_compra` bit(1) NULL,
+  PRIMARY KEY (`CPF`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
