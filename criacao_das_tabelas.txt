@@ -6,16 +6,17 @@ create database vendas_sucos;
 use vendas_sucos;
 
 # criando a tabela produtos
-create table produtos 
-(
+create table produtos(
 codigo varchar(10) not null,
 descritor varchar(100) null,
 sabor varchar(50) null,
 tamanho varchar(50) null,
 embalagem varchar(50) null,
 preco_lista float null,
-primary key (codigo)
-);
+primary key (codigo))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
 
 # criando a tabela vendedores
 create table vendedores(
